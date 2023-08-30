@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #E3F2FD;
+}
+
+.piano-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.btns-parentdiv {
+    background-color: #141414;
+    padding: 35px 40px;
+    border-radius: 20px;
+}
+
+.btns-parentdiv h2 {
+    font-size: 1.5rem;
+    color: white;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.btns-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    position: relative;
+}
+
+.btn {
+    border-radius: 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+.btn-white {
+    width: 70px;
+    height: 220px;
+    border: 1px solid #000;
+    background: linear-gradient(#fff 96%, #eee 4%);
+}
+
+.btn-white.active {
+    box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+}
+
+.blackBtns-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    gap: 50px;
+    margin-left: 30px;
+}
+
+.btn-black {
+    min-width: 44px;
+    min-height: 140px;
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(#333, #000);
+    color: white;
+}
+
+.btn-black.active {
+    box-shadow: inset -5px -10px 10px rgba(255, 255, 255, 0.1);
+    background: linear-gradient(to bottom, #000, #434343);
+}
+
+.first-black {
+    margin-left: 1.2rem;
+}
+
+.second-black {
+    margin-left: -1.6rem;
+}
+
+.third-black {
+    margin-left: 2.9rem;
+}
+
+.fourth-black {
+    margin-left: -1.5rem;
+}
+
+.fifth-black {
+    margin-left: -1.5rem;
+}
+
+.sixth-black {
+    margin-left: 2.8rem;
+}
+
+.seventh-black {
+    margin-left: -1.5rem;
+}
+
+.piano-heading {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.piano-svg{
+    width: 24px;
+    height: 24px;
+    margin-top: -0.2rem;
+}
